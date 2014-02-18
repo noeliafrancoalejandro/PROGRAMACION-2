@@ -1,0 +1,17 @@
+// PORQUE LAS APARIENCIAS ENGAÑAN ES MEJOR IRSE AL LO SEGURO: Defines the entry point for the console application.
+//AUTOR:NOELIA FRANCO
+//FECHA:18/02/2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+int main() 
+{
+	cout <<"PORQUE AVECES LAS APARIENCIAS ENGAÑAN MEJOR ES IRSE A LO SEGURO";
+    getch ();
+    return 0;
+}
