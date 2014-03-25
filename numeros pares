@@ -1,0 +1,25 @@
+// numeros pares.cpp : Defines the entry point for the console application.
+//fecha:25/03/14
+//autor:noelia franco//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+void main()
+{
+int a,b,r;
+cout<<"ingrese a";
+cin>>a;
+cout<<"ingrese b";
+cin>>b;
+ if ((a%2==0)&&(b%2==0))
+	r=a+b;
+ else
+    r=a*b;
+ cout<<r;
+
+ getch();
+}
