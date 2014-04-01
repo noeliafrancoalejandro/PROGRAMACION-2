@@ -1,0 +1,26 @@
+// numeros pares.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+using namespace std;
+
+void main()
+{
+ int suma,N;
+ float i;
+ cout<< "ingresar el valor de N:";
+ cin>> N;
+ suma=0;
+ cout<< "suma";
+  for(i=1;i<=N;i=i+2)
+  {
+      suma=suma+i;
+	  cout<<i<<"i=i+2";
+  }
+  cout<<"\n\la suma de los "<<N<<" primeros numeros impares naturales es:"<<suma;
+  getch();
+ 
+}
