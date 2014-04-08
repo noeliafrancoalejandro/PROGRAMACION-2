@@ -1,0 +1,58 @@
+ // parciales.cpp : Defines the entry point for the console application.
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+ float P1,P2,P3,pr,final,NF;
+ {
+  do
+   {
+   cout<< "introdusca parcial 1";
+   cin>> P1;
+   }
+  while ((P1>100||P1<0)&&(P1!=-99));
+ 
+  do
+   {
+   cout<< "introdusca parcial 2";
+   cin>> P2;
+
+   while (P2>100||P2<0);
+   
+	 do
+   {
+   cout<< "introdusca parcial 3";
+   cin>>P3;
+   }
+   while (P3>100||P3<0);
+  
+     do
+   {
+   cout<<"introduzca practica";
+   cin>> pr;
+   }
+    while (pr>100||pr<0);
+	  
+	do
+   {
+    cout<<"introduzca final";
+	cin>>final;
+   }
+  while (final>100 ||final<0);
+  
+  NF= ((P1+P2+P3)/3)*0.4+pr*0.2+final*0.4;
+     cout<<"la nota final es"<<NF;
+
+ do
+  {
+   cout<< "introdusca parcial 1";
+   cin>> P1;
+  }
+  while ((P1>100||P1<0)&&(P1!=-99));
+   }
+   
+ }
+   getch();
