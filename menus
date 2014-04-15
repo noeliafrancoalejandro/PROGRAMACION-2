@@ -1,0 +1,53 @@
+//suma de los numeros pares.cpp : Defines the entry point for the console application.
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main ()
+{
+int a;
+int b;
+int suma;
+int	resta;
+int	multiplicacion;
+int	dividir;
+int opcion;
+cout<<"ingrese el valor de a";
+cin>>a;
+cout<< "ingrese el valor de b";
+cin>>b;
+do
+{
+cout<< "1.suma";
+cout<< "2.resta";
+cout<< "3.multiplicacion";
+cout<< "4.dividir";
+cout<< "5.salir";
+cin>>opcion;
+ if(opcion==1) 
+ {suma=a+b;
+   cout<<"la suma es"<<suma;
+  }
+ if(opcion==2)
+ {
+    multiplicacion=a*b;
+    cout<< "multiplicacion"<<multiplicacion;
+  }
+ if(opcion==3)
+ {
+	 dividir=a/b;
+	 cout<< "dividir"<<dividir;
+ }
+
+ if(opcion==4)
+ {
+	 resta=a-b;
+     cout<< "resta"<<resta;
+ }
+}
+while(opcion!=0);
+}
