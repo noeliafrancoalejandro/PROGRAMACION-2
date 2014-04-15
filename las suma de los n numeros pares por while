@@ -1,0 +1,22 @@
+// suma de los numeros pares.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main ()
+{
+int n,cont,suma;
+cout<< "introdusca suma";
+cin>> n;
+suma=0;
+cont=2;
+while(cont<=n)
+     {
+	 suma=suma+cont;
+     cont=cont+2;
+     }
+ cout<< suma;
+getch();
+}
