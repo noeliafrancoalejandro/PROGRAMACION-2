@@ -1,0 +1,31 @@
+// serie del parcial.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void main ()
+{
+ float suma,x,f,p;
+ int n,i;
+ cout<<"introduzca n ";
+ cin>>n;
+ cout<<"introdusca x";
+ cin>>x;
+ suma=7;
+ p=1;
+ for(i=1;i<=n;i=i++)
+    {
+    if(i%2==0)
+    suma=suma-(pow(x,i)/((i+1)*p));
+    else
+     suma=suma+(pow(x,i)/((i+1)*p));
+	p=p*(i+1);
+}
+  cout<<"la suma de los primeros numeros por horner es";
+  cout<<suma;
+  getch();
+}
+
