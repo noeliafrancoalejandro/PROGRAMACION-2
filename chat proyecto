@@ -1,0 +1,80 @@
+Chat
+Crear Usuario:  
+ En el boton crear usuario pides nombre de usuario y contrasenha y vas almacenando en el vector “Nombre de PC” y “Contrasenha_numerica”, al mismo tiempo asignas en el vector “Direcciones de PC” la posición de tu apuntador del vector nombres de PC. Digamos la primera vez creas un usuario Pao y contrasenha 25; además guardas en tu vector de “Direcciones PC’ el valor de tu apuntador “i” asi vas a tener referencia de la casilla asignada para leer y guardar mensajes.  Seria algo asi:
+//Declaras todos los vectores y variables que necesites
+Int i=1; // esta variable debe ser global, es decir que la declaras fuera del botón para que no pierda su valor cuando se acabe la rutina del botón.
+Int dir=0; // esta variable debe ser global, es decir que la declaras fuera del botón para que no pierda su valor cuando se acabe la rutina del botón.
+Cout<<”introducir nombre”; 
+cin>>Nombres_PC [i];
+cout<<”introducir contrasenha, solo números de 3 digitos”;
+cin>>contrasenha_num [i];
+dirección_de_PC [dir]=i;
+i++;
+dir++;
+
+Log In: En este botón se debe verificar la contrasenha guardada, osea básicamente comparar lo que escribe con lo que hay guardado para ese nombre. Para esto es más fácil que cuando haga clic en este botón te muestre una lista o combo_box  todos los nombres de usuarios existentes, esto los haces recorriendo desde inicio a fin el vector Nombres_PC y en el nombre que seleccione cuentas el numero que ha recorrido el contador de posiciones y en esa posición en el vector “contrasenha_num” comparas lo que escribe con lo que hay guardado en esa posición, seria algo asi mas o menos:
+
+//recorrer el vector para llenar el combo_box
+Int p=0
+While(Nombres_PC[p] != “ “)
+{
+Combo box= nombres_PC[p]
+P++;
+}
+//No me acuerdo como es para capturar el evento del nombre que se selecciona, tu ayudante te puede ayudar. Pero una vez que ya tienes el nombre del usuario que el selecciono lo guardas en una variable de tipo que admita caracteres o palabras y lo buscas tomando en cuenta la posición cuando estás buscando para comparar la contrasenha. Algo Asi;
+
+Char selección=”lo que selecciono del combo o de la lista de usuarios, digamos Nona que es la posición 2 del vector “Nombres_PC” ”;
+
+Int k=0; int bandera =0; int pos;
+
+While (bandera == 0)
+{
+	If (seleccion == Nombres_PC[k] )
+	{
+		Bandera =1;
+		Pos = k;
+}
+K++
+}
+
+
+
+
+
+
+
+
+
+//Ahora ya tenes la posición de la contraseña que debes comparar con la contraseña que ingresa por teclado, algo asi:
+
+Int cont;
+Cout<< “introduzca contrasenha”:
+Cin>> cont;
+If(cont == Contrasenha_num [pos])
+{
+	Habilitas o muestras los botones de leer mensaje y el boton de Enviar mensaje;
+}
+Else cout<<”Contrasenha incorrecta”;
+
+Enviar Mensaje: Para enviar mensaje, muestras la misma lista usuarios de la misma manera que utilizas para hacer el Log in y capturas a quien quiere enviar el mensaje de la misma manera que haces para el Log In.  
+Luego lees el mensaje y lo guardas en la posición del nombre pero en el vector de Inbox, algo asi:
+
+Char destino;
+Int f=0;
+Destino = //nombre que selecciono de la lista de usuarios que capturas.
+Posición = //de igual manera a cuando haces el log in, tienes ya la posicion del nombre que es igual a destino.
+Cout<<”introduzca un mensaje corto”;
+Cin>>Inbox[pos]; // Aquí estas guardando el mensaje en el inbox de ese usuario. 
+
+Mostrar Mensaje: Para mostrar mensaje, tienes que tener guardado la posición de tu usuario que esta haciendo uso en este momento, digamos que Toto que está en la posición 5 del vector Nombres_PC y con esa posición muestras el mensaje que está en el vector Inbox. Algo así:
+
+// tienes el nombre de usuario que esta haciendo uso en este momento del chat
+// tienes la posicion entonces solo muestras el mensaje que hay en el vector 
+
+Cout<< Inbox [pos];
+
+// habría que hacer otro vector para el remitente del mensaje y mostrar primero el remitente y luego el mensaje pero la mecánica es la misma.
+
+
+
+Esto Nani es un chat que aparenta saber las direcciones de las PC de cada usuario, por eso el dibujo de unos routers en una red
