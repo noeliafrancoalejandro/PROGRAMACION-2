@@ -1,0 +1,36 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+ 
+using namespace std;
+ 
+int factorial (int numero);
+int combi (int n, int r);
+ 
+void main()
+{
+int r, n, c;
+cout<<"ingresar el valor de R: ";
+cin>>r;
+cout<<"ingresar el valor de N : ";
+cin>>n;
+c=combi(n,r);
+cout<<"el resultado es: ";
+cout<<c;
+ 
+getch();
+}
+ 
+int factorial (int numero)
+{
+int p, i;
+p=1;
+for (i=1;i<=numero;i++)
+p=p*i;
+return p;
+}
+ 
+int combi (int n, int r)
+{int c;
+c=factorial (n)/(factorial(r)*factorial(n-r));
+return c;
