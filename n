@@ -1,0 +1,17 @@
+	int a,b,s;
+	cout<<"ingrese a";
+	cin>>a;
+	cout<< "ingrese b";
+	cin>>b;
+	
+	if(a>b)
+	cout<< "el mayor de los  numeros es";
+	cout<<a;
+	else{
+		if(b>a)
+	cout<<b;
+		else
+			cout <<"los dos son iguales";
+
+	getch();
+}
