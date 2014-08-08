@@ -1,0 +1,24 @@
+#include <iostream>
+#include "conio.h"
+using namespace std;
+int dividir(int a,int b);
+void main()
+{
+	int p,a,b;
+	cout<< "ingrese a";
+    cin>> a;
+	cout<< "ingrese b";
+	cin>> b;
+	p=dividir(a,b);
+	cout<<p;
+	getch();
+}
+int dividir(int a,int b)
+{
+	int i,p=0;
+	while(a>0){
+	a=a-b;
+	p++;
+	}
+	return(p);
+}
