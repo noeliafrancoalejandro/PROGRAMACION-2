@@ -1,0 +1,24 @@
+#include <iostream>
+#include "conio.h"
+using namespace std;
+int multiplicar (int a,int b);
+void main()
+{
+	int p,a,b;
+	cout<< "ingrese a";
+    cin>> a;
+	cout<< "ingrese b";
+	cin>> b;
+	p=multiplicar(a,b);
+	
+	getch();
+}
+int multiplicar (int a,int b);
+{
+	int i,p=0;
+	for (i=0;i<b;i++)
+	{
+		p=p+a;
+	}
+	return ()
+}
